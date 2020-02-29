@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" id="#top">
+    <link rel="stylesheet" href="css/style.css" id="#top">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li role="presentation" class="active"><a href="index.html">HOME</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TABLES<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="tables.html">UTILITARIAN LONG</a></li>
+                <li><a href="tables.html">UTILITARIAN SHORT</a></li>
+                <li><a href="tables.html">PICNIC</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">STOOLS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#toadstool">TOADSTOOL</a></li>
+                <li><a href="#riser">RISER</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CONSOLES & SHELVING<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">UROS LONG</a></li>
+                <li><a href="consoles.html">UROS SHORT</a></li>
+                <li><a href="consoles.html">HERMANN</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DESKS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="desks.html">HUGO</a></li>
+                <li><a href="desks.html">MAGELLAN</a></li>
+                <li><a href="desks.html">DRAFTING BOARD</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div class="bs-docs-featurette-clone" id="toadstool">
+      <div class="container">
+        <br>
+        <br>
+        <div class="row">
+          <div class="column1">
+            <img src="images/toadstool6.jpg" alt="VR"  class="responsive_lg">
+          </div>
+          <div class="column1">
+            <div class="row">
+              <img src="images/toadstool1.jpg" alt="VR"  class="responsive_lg">
+            </div>
+            <br>
+            <div class="row1">
+              <h3>TOADSTOOL</h3>
+              <br>
+              <br>
+              <p id="text_info">
+                DIMENSIONS: &nbsp&nbsp&nbsp 18”L | 8-12"W | 12"H
+                <br>
+                <br>
+                FINISH: &nbsp&nbsp&nbsp SYCAMORE LIVE EDGE | POLYURETHANE
+                <br>
+                <br>
+                PRICE: &nbsp&nbsp&nbsp $250 + TAX
+                <br>
+                <br>
+                LEAD TIME: &nbsp&nbsp&nbsp APPROXIMATELY 2-3 WEEKS
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column2">
+            <img src="images/toadstool2.jpg" alt="VR"  class="responsive_lg">
+          </div>
+          <div class="column1">
+            <img src="images/toadstool3.jpg" alt="VR"  class="responsive_lg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-docs-featurette-clone" id="utilShort">
+      <div class="container">
+        <br>
+        <br>
+        <div class="row">
+          <div class="column1">
+            <div class="row">
+              <img src="images/utilShort1.jpg" alt="VR"  class="responsive_lg">
+            </div>
+          </div>
+          <div class="column1">
+            <div class="row">
+              <img src="images/utilShort3.jpg" alt="VR"  class="responsive_lg">
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column1">
+            <div class="row1">
+              <h3>UTILITARIAN SHORT</h3>
+              <br>
+              <br>
+              <p>
+                DIMENSIONS: &nbsp&nbsp&nbsp 17"H | 36”L | 13"W
+                <br>
+                <br>
+                FINISH: &nbsp&nbsp&nbsp CEDAR LIVE EDGE | POLYURETHANE
+                <br>
+                <br>
+                PRICE: &nbsp&nbsp&nbsp $550 + TAX
+                <br>
+                <br>
+                LEAD TIME: &nbsp&nbsp&nbsp APPROXIMATELY 2-3 WEEKS
+              </p>
+            </div>
+            <div class="row2">
+              <img src="images/utilShort2.jpg" alt="VR"  class="responsive_lg">
+            </div>
+          </div>
+          <div class="column1">
+            <img src="images/utilShort0.jpg" alt="VR"  class="responsive_lg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <hr class="half-rule">
+
+    <script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
+
+  </body>
+</html>
