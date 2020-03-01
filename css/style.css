@@ -36,6 +36,10 @@
   float: right;
 }
 
+.row5 {
+  padding-left: 5%;
+}
+
 .column0 {
   float: left;
   width: 41%;
@@ -68,6 +72,21 @@
   float: right;
   padding-top: 1%;
   width: 55%
+}
+
+.column5 {
+  width: 55%;
+  float: left;
+}
+
+.column6 {
+  float: right;
+  width: 41%;
+}
+
+.column7 {
+  width: 37%;
+  float: left;
 }
 
 .row:after {
