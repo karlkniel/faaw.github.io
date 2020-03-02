@@ -177,16 +177,6 @@
     <hr class="half-rule">
 
     <script>
-    function changePage(event) {
-    if($(event.target).hasClass('external')) {
-        window.location.href = $(event.target).attr('href');
-        return;
-    }
-    //...
-    }
-    $(function () {
-        $('.nav li').click( changePage );
-    }
     $(document).ready(function(){
       // Add scrollspy to <body>
       $('body').scrollspy({target: ".navbar", offset: 50});
@@ -194,6 +184,10 @@
       // Add smooth scrolling on all links inside the navbar
       $("#myNavbar a").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
+        if($(event.target).hasClass('external')) {
+            window.location.href = $(event.target).attr('href');
+            return;
+        }
         if (this.hash !== "") {
           // Prevent default anchor click behavior
           event.preventDefault();

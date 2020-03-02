@@ -212,16 +212,6 @@
     <br>
 
     <script>
-    function changePage(event) {
-    if($(event.target).hasClass('external')) {
-        window.location.href = $(event.target).attr('href');
-        return;
-    }
-    //...
-    }
-    $(function () {
-        $('.nav li').click( changePage );
-    }
     $(document).ready(function(){
       // Add scrollspy to <body>
       $('body').scrollspy({target: ".navbar", offset: 50});
