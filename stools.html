@@ -17,9 +17,9 @@
             <li role="presentation" class="active"><a href="http://firstaidaw.com/">HOME</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TABLES<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="http://firstaidaw.com/tables.html#utilLong" id="utilLong">UTILITARIAN LONG</a></li>
-                <li><a href="http://firstaidaw.com/tables.html#utilShort" id="utilShort">UTILITARIAN SHORT</a></li>
-                <li><a href="http://firstaidaw.com/tables.html#picnic" id="picnic">PICNIC</a></li>
+                <li><a href="http://firstaidaw.com/tables.html#utilLong" class="external">UTILITARIAN LONG</a></li>
+                <li><a href="http://firstaidaw.com/tables.html#utilShort" class="external">UTILITARIAN SHORT</a></li>
+                <li><a href="http://firstaidaw.com/tables.html#picnic" class="external">PICNIC</a></li>
               </ul>
             </li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">STOOLS<span class="caret"></span></a>
@@ -29,9 +29,9 @@
             </li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CONSOLES & SHELVING<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="http://firstaidaw.com/consoles.html#urosLong" id="urosLong">UROS LONG</a></li>
-                <li><a href="http://firstaidaw.com/consoles.html#urosShort" id="urosShort">UROS SHORT</a></li>
-                <li><a href="http://firstaidaw.com/consoles.html#hermann" id="hermann">HERMANN</a></li>
+                <li><a href="http://firstaidaw.com/consoles.html#urosLong" class="external">UROS LONG</a></li>
+                <li><a href="http://firstaidaw.com/consoles.html#urosShort" class="external">UROS SHORT</a></li>
+                <li><a href="http://firstaidaw.com/consoles.html#hermann" class="external">HERMANN</a></li>
               </ul>
             </li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">DESKS<span class="caret"></span></a>
@@ -92,6 +92,16 @@
     <hr class="half-rule">
 
     <script>
+    function changePage(event) {
+    if($(event.target).hasClass('external')) {
+        window.location.href = $(event.target).attr('href');
+        return;
+    }
+    //...
+    }
+    $(function () {
+        $('.nav li').click( changePage );
+    }
     $(document).ready(function(){
       // Add scrollspy to <body>
       $('body').scrollspy({target: ".navbar", offset: 50});
