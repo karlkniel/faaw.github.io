@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FIRST AID | MEET THE TEAM</title>
+    <link rel="icon" type="image/png" href="/images/logo/logofortab.png">
+
+    <link rel="stylesheet" href="css/bootstrap.css" id="#top">
+    <link rel="stylesheet" href="css/style.css" id="#top">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li role="presentation"><a href="https://firstaidaw.com/" class="external">HOME</a></li>
+            <li role="presentation"><a href="https://firstaidaw.com/#furniture" class="external">FURNITURE</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://firstaidaw.com/#about" class="external">OUR COMPANY</a></li>
+                <li><a href="#team">MEET THE TEAM</a></li>
+                <li><a href="studio.html" class="external">STUDIO CULTURE</a></li>
+              </ul>
+            </li>
+            <li role="presentation"><a href="contact.html" class="external">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div class="bs-docs-featurette" id="team">
+      <div class="container">
+        <div class="row3">
+          <h1>THE TEAM</h1>
+          <hr class="half-rule">
+          <br>
+          <br>
+          <div class="column5">
+            <h4>DESIGNER : EMILY SPEAS</h4>
+            <p>
+                Emily graduated with a Bachelor of Design from the University of
+                Florida in 2017 and recently completed her Masters of Architecture
+                at UF in 2020.
+                She finds inspiration through travel and spent four months abroad
+                studying at the Vicenza Institute of Architecture. In 2019, Emily
+                completed a year-long internship with Walt Disney Imagineering,
+                which fueled her creativity and passion for design. Her simple,
+                clean, and efficient architectural style translates effortlessly to
+                smaller scale, handmade furniture pieces.
+            </p>
+          </div>
+          <div class="column6">
+            <img src="images/family/emily.jpg" alt="FirstAid" class="responsive">
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row3">
+          <div class="column5">
+            <br>
+            <br>
+            <h4>CARPENTER : KARL KNIEL</h4>
+            <p>
+                Karl is a native Floridian currently working as a Software Engineer
+                in Denver, Colorado. He graduated from the University of Florida
+                in 2018 with a degree in Computer Engineering and a minor in Physics.
+                His technical skills stem from his grandfathers, one a chemical
+                engineer and the other a home builder in Central Florida in the 60s.
+                Karl has cultivated his carpentry skills for the last 6 years
+                producing multiple pieces for family and friends. He has a great
+                love for the outdoors and finds inspiration in nature.
+            </p>
+          </div>
+          <div class="column6">
+            <img src="images/family/karl.jpg" alt="FirstAid" class="responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+    <br>
+    <br>
+
+    <script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        if($(event.target).hasClass('external')) {
+            window.location.href = $(event.target).attr('href');
+            return;
+        }
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
+
+  </body>
+</html>

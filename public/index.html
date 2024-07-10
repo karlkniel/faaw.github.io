@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FIRST AID</title>
+    <link rel="icon" type="image/png" href="/images/logo/logofortab.png">
+
+    <link rel="stylesheet" href="css/bootstrap.css" id="#top">
+    <link rel="stylesheet" href="css/style.css" id="#top">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li role="presentation" class="active"><a href="#home">HOME</a></li>
+            <li role="presentation"><a href="#furniture">FURNITURE</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#about">OUR COMPANY</a></li>
+                <li><a href="ourteam.html" class="external">MEET THE TEAM</a></li>
+                <li><a href="studio.html" class="external">STUDIO CULTURE</a></li>
+              </ul>
+            </li>
+            <li role="presentation"><a href="contact.html" class="external">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div class="bs-docs-featurette_head" id="home">
+      <img src="images/logo/logo.jpeg" alt="FirstAid" class="responsive_xl">
+      <br>
+      <img src="images/logo/bannerv7.jpf" alt="FirstAid" class="responsive_xl">
+    </div>
+    <br>
+    <div class="bs-docs-featurette_head" id="home">
+      <img src="images/shelving/fullWallMod0.jpf" alt="FirstAid" class="responsive_xl">
+    </div>
+
+    <div class="bs-docs-featurette" id="furniture">
+      <div class="container">
+        <div class="row">
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/tables.jpg" alt="Tables" class="responsive_lg">
+              <div class="overlay">
+                <a href="tables.html">
+                  <img src="images/placeholders/utillongrolloverimage.jpg" alt="Tables" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/stools.jpg" alt="Stools" class="responsive_lg">
+              <div class="overlay">
+                <a href="stools.html">
+                  <img src="images/placeholders/stoolrolloverimage.jpg" alt="Stools" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/consoles.jpeg" alt="Consoles" class="responsive_lg">
+              <div class="overlay">
+                <a href="consoles.html">
+                  <img src="images/placeholders/consolerolloverimage.jpg" alt="Consoles" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/desks.jpg" alt="Desks" class="responsive_lg">
+              <div class="overlay">
+                <a href="desks.html">
+                  <img src="images/desks/desk0.JPG" alt="Desks" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/customshelving.jpg" alt="Shelving" class="responsive_lg">
+              <div class="overlay">
+                <a href="shelving.html">
+                  <img src="images/placeholders/shelvingrollover.jpeg" alt="Shelving" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column1">
+            <div class="container0">
+              <img src="images/placeholders/forthedogs.jpf" alt="Dogs" class="responsive_lg">
+              <div class="overlay">
+                <a href="#">
+                  <img src="images/placeholders/forthedogsimage.jpf" alt="Dogs" class="responsive_lg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="bs-docs-featurette" id="about">
+      <div class="container">
+        <div class="row3">
+          <div class="column5">
+            <h1>ABOUT FAAW</h1>
+            <hr class="half-rule">
+            <p>
+                The furniture industry is in need of healing. If you've found yourself
+                uttering the phrase, 'They dont make 'em like they used to,' a little
+                too often recently, you've come to the right place.
+                At First Aid Architectural Woodworking we believe that furniture
+                should not only look great but should also act as a tool to support
+                your lifestyle. We believe that a quality piece should never
+                have to be thrown away. Our furniture is efficiently designed for
+                people who value form and function equally. Our work is built using
+                quality materials and hardware that not only stand the test of time
+                but can be easily repaired after years of use.
+            </p>
+            <br>
+            <h4>They don’t make ‘em like First Aid.</h4>
+            <img src="images/logo/FAAW.jpg" alt="FirstAid" class="responsive_lg">
+          </div>
+          <div class="column6">
+            <br>
+            <img src="images/family/klara1.jpeg" alt="FirstAid" class="responsive_lg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr class="half-rule">
+    <br>
+    <br>
+
+    <script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#myNavbar a").on('click', function(event) {
+        if($(event.target).hasClass('external')) {
+            window.location.href = $(event.target).attr('href');
+            return;
+        }
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
+
+  </body>
+</html>
